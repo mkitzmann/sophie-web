@@ -1,17 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Container from "../components/layout"
+import Layout from "../components/layout/layout"
+import Hero from "../components/hero/hero";
 
 export default ({data}) => (
-    <Container>
-        <div>
-            <h1>{data.site.siteMetadata.title}</h1>
-            <p>
-                What do I like to do? Lots of course but definitely enjoy building
-                websites.
-            </p>
-        </div>
-    </Container>
+    <Layout>
+      <Hero></Hero>
+    </Layout>
 )
 
 export const query = graphql`
