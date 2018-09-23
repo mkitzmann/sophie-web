@@ -1,0 +1,22 @@
+$for-mobile: 700px;
+$for-tablet: 1000px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device){
+      @content;
+    }
+  }
+
+.container {
+    background-color: #eee;
+}
+
+.test {
+    flex: 1;
+    @include media-query($for-tablet) {
+        flex: 40%;
+    }
+}
+
+.image {
+}

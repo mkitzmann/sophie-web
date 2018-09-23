@@ -1,0 +1,13 @@
+.emailLink {
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    color: #6C6C6C;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}

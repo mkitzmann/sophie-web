@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./layout.module.css"
+import styles from "./layout.module.scss"
 import { StaticQuery, graphql } from "gatsby"
 
 console.log(styles)
@@ -23,9 +23,6 @@ export default ({ children }) => (
                 
                 {children}
 
-                <footer className={styles.footer}>
-                    Sophie Kitzmann
-        </footer>
             </div>
         )}
     />

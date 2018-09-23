@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./hero.module.css"
+import styles from "./hero.module.scss"
 import { Link } from "gatsby"
 
 const ListLink = props => (
@@ -12,7 +12,7 @@ const ListLink = props => (
 
 export default () => (
 
-    <div className={styles.container}>
+    <section className={styles.container}>
 
         <ul className={styles.navigation}>
 
@@ -25,7 +25,10 @@ export default () => (
             <img src="/img/skg-logo.svg" alt="" className={styles.logo} />
         </div>
 
-        <i className={styles.arrowdown}></i>
-    </div>
+        <Link to="#about" className={styles.arrowrapper}>
+            <i className={styles.arrowdown}></i>
+        </Link>
+
+    </section>
 
 );
